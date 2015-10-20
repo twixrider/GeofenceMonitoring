@@ -1,0 +1,32 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 20
+    buildToolsVersion "20.0.0"
+
+    defaultConfig {
+        applicationId "mc.android.fhooe.at.geofencemonitoring"
+        minSdkVersion 18
+        targetSdkVersion 20
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    // Google Play Services
+    compile 'com.google.android.gms:play-services:4.3.23'
+
+    //crouton lib for the errors
+    compile('de.keyboardsurfer.android.widget:crouton:1.8.4@aar') {
+        exclude group: 'com.google.android', module: 'support-v4'
+    }
+}

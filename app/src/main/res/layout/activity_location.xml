@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:background="@drawable/bg_50">
+
+
+    <Button
+            android:background="@drawable/custom_button"
+            android:id="@+id/bt_activity_main_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Start Service"/>
+
+    <Button
+            android:background="@drawable/custom_button"
+            android:id="@+id/bt_activity_main_stop"
+            android:layout_width="match_parent"
+            android:layout_below="@id/bt_activity_main_start"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Stop Service"/>
+
+    <ScrollView
+            android:id="@+id/sv_activity_main"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/bt_activity_main_stop"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true">
+
+        <TextView
+
+                android:id="@+id/tv_activtiy_main_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"/>
+    </ScrollView>
+
+
+</RelativeLayout>
