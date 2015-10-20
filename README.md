@@ -1,6 +1,8 @@
 # GeofenceMonitoring
 The Application for my Bachelor Thesis
 
+GERMAN Version:
+
 Geofence Monitoring ist ein Projekt zur Bachelorarbeit „Geofencing and behavior 
 profiling as authenticaton facet“ diese Anwendung ist nur ein Teil von drei laufenden Projekten. 
 Diese drei Projekte haben alle ein Ziel: Personen ohne Passwörter, Zugangskarten, etc. zu Authentifizieren. 
